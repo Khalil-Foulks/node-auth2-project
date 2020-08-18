@@ -25,7 +25,7 @@ router.post("/register", (req, res) => {
             .catch(error => {
                 res.status(500).json({ message: error.message });
             });
-    }else {
+    } else {
         res.status(400).json({
           message: "please provide username and password and the password shoud be alphanumeric",
         });
